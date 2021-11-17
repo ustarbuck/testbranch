@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!--파일명의 앞뒤를 정해준다.-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="prefix" value="/view/"/>  --><!--꼬리말, 머리말 : view라는 이름의 폴더를 만들고 hello.jsp를 찾아가라.-->
+		<property name="suffix" value=".jsp"/>	 <!--확장자-->
+	</bean>
+	
+	<bean id="helloController" class="com.controller.HelloController"></bean>
+
+</beans>
