@@ -22,6 +22,7 @@ public class HelloController {
 //	}
 	
 	//test 
+	//추가
 	
 	@GetMapping(value="/hello.do", produces="text/html;charset=UTF-8") //파일명을 안주면 자동으로 hello인 이름을 따라간다. 
 	//Spring만의 특징 - 리턴 타입이 String이면 단순 문자열로 인식하는 것이 아니라 파일명으로 인식한다.
